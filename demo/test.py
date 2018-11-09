@@ -14,5 +14,5 @@ coco_demo = COCODemo(
     confidence_threshold=0.7,
 )
 # load image and then run prediction
-image = 'COCO_val2014_000000290959.jpg'
+image = "COCO_val2014_000000290959.jpg"
 predictions = coco_demo.run_on_opencv_image(image)
