@@ -13,6 +13,9 @@ coco_demo = COCODemo(
     min_image_size=800,
     confidence_threshold=0.7,
 )
+
+import matplotlib.image as mpimg
+image = mpimg.imread("COCO_val2014_000000290959.jpg")
 # load image and then run prediction
-image = "COCO_val2014_000000290959.jpg"
+#image = "COCO_val2014_000000290959.jpg"
 predictions = coco_demo.run_on_opencv_image(image)
