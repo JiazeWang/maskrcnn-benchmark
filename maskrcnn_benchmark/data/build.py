@@ -27,6 +27,7 @@ def build_dataset(dataset_list, transforms, dataset_catalog, is_train=True):
     if not isinstance(dataset_list, (list, tuple)):
         raise RuntimeError(
                 "dataset_list should be a list of strings, got {}".format(dataset_list))
+    print('dataset_list, transforms, dataset_catalog:',dataset_list, transforms, dataset_catalog)
     datasets = []
     for dataset_name in dataset_list:
         data = dataset_catalog.get(dataset_name)
