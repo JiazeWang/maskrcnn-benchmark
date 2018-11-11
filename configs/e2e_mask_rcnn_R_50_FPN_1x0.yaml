@@ -1,6 +1,7 @@
 MODEL:
   META_ARCHITECTURE: "GeneralizedRCNN"
-  WEIGHT: "catalog://ImageNetPretrained/MSRA/R-50"
+  #WEIGHT: "catalog://ImageNetPretrained/MSRA/R-50"
+  WEIGHT: "ImageNetPretrained/MSRA/R-50.pkl"
   BACKBONE:
     CONV_BODY: "R-50-FPN"
     OUT_CHANNELS: 256
